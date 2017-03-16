@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Imager</string>
+    <string name="hello">深度图像</string>
+    <string name="imager">Imager</string>
+</resources>

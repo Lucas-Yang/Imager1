@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#99cc99">
+
+    <ImageView
+        android:id="@+id/imageview"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_margin="24dp"
+        android:layout_marginBottom="24dp"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:text="色调"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageview"
+        android:layout_alignParentLeft="true"
+        android:background="#ffcccc"
+        android:layout_alignParentStart="true"
+        android:id="@+id/textView" />
+
+    <SeekBar
+        android:id="@+id/lumBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/saturBar"
+        android:layout_alignLeft="@+id/saturBar"
+        android:layout_alignStart="@+id/saturBar"
+        android:layout_marginTop="11dp" />
+
+    <SeekBar
+        android:id="@+id/hueBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageview"
+        android:layout_toRightOf="@+id/textView"
+        android:layout_toEndOf="@+id/textView" />
+
+    <SeekBar
+        android:id="@+id/saturBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:layout_below="@+id/hueBar"
+        android:layout_alignLeft="@+id/hueBar"
+        android:layout_alignStart="@+id/hueBar" />
+
+    <TextView
+        android:text="饱和"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/saturBar"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="#ffcccc"
+        android:id="@+id/textView2" />
+
+    <TextView
+        android:text="亮度"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView3"
+        android:background="#ffcccc"
+        android:layout_alignTop="@+id/lumBar"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:text="保存"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="#00ff66"
+        android:id="@+id/buttonf" />
+
+</RelativeLayout>
